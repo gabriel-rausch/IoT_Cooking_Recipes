@@ -25,15 +25,19 @@
  * #Part 3: Prepare end-point
  * The measured data should be piped via the network somewhere and should be
  * displayed. Of course you can code your serverside end-point from skratch,
- * but I would prefer the lazy method for this test. Easy to use is ThingSpeak,
+ * but I would prefer the lazy method for this test. 
+ * a) One approach: Use is [ThingSpeak](https://thingspeak.com)
  * you just need to sign-up with your HFU mail (our university has a cooperation).
  * After sign-in you can create a channel with some fields.
+ * b) Another approach: Fire your data to your telegram bot.
+ * Here is a great introduction how to use the telegram API:
+ * [Send and Receive Messages with the Telegram API](https://wk0.medium.com/send-and-receive-messages-with-the-telegram-api-17de9102ab78)
  * 
  * #Part 4: Test end-point
  * Postman is a great and powerful API testing tool. So, copy the GET URL of your
- * ThingSpeak Channel and call this URL from Postman (you can manipulate the field data
+ * ThingSpeak Channel (or the URL of your chat with your bot via Telegram API) and call this URL from Postman (you can manipulate the field data
  * directly in the url get parameters). After firing the call the value should be
- * visible in your dashboard.
+ * visible in your dashboard (or should display the information in your telegram messenger).
  * 
  * #Part 5: ESP calls
  * Finally your can hand the API call over to the ESP code. Make sure your ESP is
