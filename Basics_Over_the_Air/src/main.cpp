@@ -1,7 +1,7 @@
 /**
  * 
  * Over the Air
- * Send Data to an End-Point within your Network
+ * Send Data to an End-Point within via Network
  * 
  * What you need:
  * - Basic software environment (VSC, PlatformIO and Postman for API Testing)
