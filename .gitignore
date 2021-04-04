@@ -1,0 +1,5 @@
+.pio
+.vscode
+wifi_credentials.h
+excludedFile_*
+.DS_STORE
