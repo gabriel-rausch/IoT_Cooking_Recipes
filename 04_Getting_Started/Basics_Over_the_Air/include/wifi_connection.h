@@ -10,7 +10,9 @@ void initWifi() {
   Serial.print("Connecting...");
   delay(500);
   
-  while (WiFi.status() != WL_CONNECTED) {
+  // improved from Z3r0cks and alexander-jaroch
+  // instead of status, better waitForConnectResult
+  while (WiFi.waitForConnectResult() != WL_CONNECTED)
     delay(500);
     restartCounter++;
     Serial.println("Waiting for connection");

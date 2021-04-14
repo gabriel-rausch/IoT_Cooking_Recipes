@@ -5,6 +5,10 @@
 [Pinout ESP-WROOM-32 Dev Kit Module](https://www.flickr.com/photos/jgustavoam/40089095211)
 
 
-## Datasheet
+## Datasheet ESP32 MCU
+
+[https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf](https://www.espressif.com/sites/default/files/documentation/esp32_datasheet_en.pdf)
+
+## Datasheet ESP32­WROOM­32D & ESP32­WROOM­32U
 
 [ESP32WROOM32D & ESP32WROOM32U Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf)
