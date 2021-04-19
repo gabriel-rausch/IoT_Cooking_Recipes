@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <WebServer.h>
-#include "website-index.h"
+#include "webapp-index.h"
 
 // SSID & Password
 const char *ssid = "ESP32 Access Point"; // Enter your SSID here
@@ -19,7 +19,7 @@ WebServer server(80); // Object of WebServer(HTTP port, 80 is defult)
 // Handle root url (/)
 void handleRoot()
 {
-  String htmlstring = websiteIndex;
+  String htmlstring = webappIndex;
   server.send(200, "text/html", htmlstring);
 }
 
