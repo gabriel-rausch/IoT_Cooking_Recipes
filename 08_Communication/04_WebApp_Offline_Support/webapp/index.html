@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP Offline WebApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+
+    <script>
+        navigator.serviceWorker.register('service-worker.js');
+    </script>
+</head>
+
+<body>
+    <h1>Hello IoT WPM</h1>
+    <h2>Offline WebApp</h2>
+
+    <p>You can switch off the ESP and this webapp is still available.</p>
+    <div class="light inactive"></div>
+
+    <footer>
+        <p>Service Worker is handling the offline cached response.</p>
+        <p>In this example the switch is not active (check the previous recipes about this topic how to handle ESP
+            hardware via a web interface).</p>
+    </footer>
+
+</body>
+
+</html>
