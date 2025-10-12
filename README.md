@@ -7,21 +7,6 @@ Each folder contains self-contained sketches and explanations to help you learn,
 
 ## 📁 Repository Structure
 
-```
-
-/
-├── 00_Fundamentals/
-├── 04_Getting_Started/
-├── 05_Basics_of_Electronics/
-├── 06_Transducers/
-├── 07_Digital_Fabrication/
-│   └── Lasercutter_Case/
-├── 08_Communication/
-└── README.md
-
-````
-
-**Highlights:**
 - `00_Fundamentals` – core setup and environment basics  
 - `04_Getting_Started` – first steps and test sketches  
 - `05_Basics_of_Electronics` – resistors, sensors, circuits  
@@ -37,7 +22,7 @@ Each folder contains self-contained sketches and explanations to help you learn,
    ```bash
    git clone https://github.com/gabriel-rausch/IoT_Cooking_Recipes.git
    cd IoT_Cooking_Recipes
-````
+    ```
 
 2. Open a folder in Arduino IDE or PlatformIO.
 3. Install required libraries (see sketch comments).
@@ -62,6 +47,4 @@ Feel free to:
 ---
 
 Happy hacking & enjoy your IoT cooking! 🧪🔧
-
-```
 
