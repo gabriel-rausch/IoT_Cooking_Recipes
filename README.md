@@ -1,5 +1,6 @@
 # IoT Cooking Recipes 🍳🔌
 
+“**Cooking Recipes**” means small, reusable IoT **code snippets** — ready to mix, modify, and combine for your own projects.
 A collection of **ESP32 example projects** and “recipes” for IoT applications.  
 Each folder contains self-contained sketches and explanations to help you learn, build, and prototype faster.
 
@@ -28,11 +29,6 @@ Each folder contains self-contained sketches and explanations to help you learn,
 3. Install required libraries (see sketch comments).
 4. Upload to your ESP32 and start experimenting!
 
----
-
-## 💡 Concept
-
-“**Cooking Recipes**” means small, reusable IoT **code snippets** — ready to mix, modify, and combine for your own projects.
 
 ---
 
