@@ -12,7 +12,7 @@
  * 
  * 
  * #Part 1: Touch sensor
- * Connect wire to touch pin (e.g. on Touch0 ~ pin 24)
+ * Connect wire to touch pin (e.g. on Touch0 ~ pin 4)
  * Print touch sensor value to serial monitor.
  * Then stick wire into fruit, observe sensor data to
  * adjust your code: when banana is touched, than the
@@ -21,6 +21,9 @@
  * 
  * 
  * #Part 2: Switch to processing
+ * Sounds is going to to play via the computer (that makes it easier to handle
+ * multiple sounds). So we need to switch from serial monitor
+ * to processing.
  * In the subfolder of this exercise you'll find a skeleton
  * of a processing sketch. Read all further details there.
  * The goal is: touching banana should 
@@ -36,9 +39,14 @@
 #include <Arduino.h>
 
 void setup() {
-  // put your setup code here, to run once:
+  Serial.begin(115200);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Serial.println("I'm alive...");
+  
+  if(touchRead(4) < 40) {  
+    Serial.println("Touch 4 active");
+  }
+  delay(200);    
 }
