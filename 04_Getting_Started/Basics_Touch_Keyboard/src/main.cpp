@@ -27,48 +27,83 @@
  * 
  */
 
- 
-#include <Arduino.h>
+
+/*
+ *
+ * Here you'll find all relevant configs for the platformio.ini
+ * 
+   [env:esp32dev]
+   platform = espressif32@6.6.0
+   board = esp32dev
+   framework = arduino
+   board_build.partitions = huge_app.csv
+   lib_deps = t-vk/ESP32 BLE Keyboard@^0.3.2
+   monitor_speed = 115200
+   
+   board_build.filesystem = littlefs
+*/
+
+
+
+ #include <Arduino.h>
 #include <BleKeyboard.h>
 
-/**
- * Create the Bluetooth keyboard
- *
- * Parameters:
- * 1st parameter (string, e.g. "Typerius42"):
- *    - Device Name (must be unique for each device, otherwise conflicts may occur)
- * 2nd parameter:
- *    - Device Manufacturer
- * 3rd parameter:
- *    - Battery Level (0–100)
- *
- */
-BleKeyboard bleKeyboard(HERE_THE_UNIQUE_NAME_OF_YOUR_BLUETOOTH_DEVICE, "Gabriel Rausch", 100);
+#define NUM_TOUCH 4
 
-void setup()
-{
+// Touch pins on the ESP32
+int touchPins[NUM_TOUCH] = {12, 14, 27, 13};
+
+// Thresholds: lower value = more sensitive
+int thresholds[NUM_TOUCH] = {40, 40, 40, 40};
+
+// Keys that will be sent via Bluetooth
+char keysToSend[NUM_TOUCH] = {'a', 'b', 'c', 'd'};
+
+// State to avoid repeated triggering
+bool touched[NUM_TOUCH] = {false};
+
+// Create Bluetooth keyboard instance
+BleKeyboard bleKeyboard("ESP32 Keyboard");
+
+void setup() {
   Serial.begin(115200);
 
+  // Start Bluetooth keyboard
   bleKeyboard.begin();
+
+  Serial.println("Waiting for Bluetooth connection...");
 }
 
-void loop()
-{
-  Serial.println("I'm alive...");
+void loop() {
 
-  if (touchRead(4) < 40)
-  {
-    Serial.println("Touch 4 active");
+  // Only send keys if a device is connected
+  if (!bleKeyboard.isConnected()) {
+    delay(100);
+    return;
   }
 
-  if (bleKeyboard.isConnected())
-  {
+  // Check all touch pins
+  for (int i = 0; i < NUM_TOUCH; i++) {
 
-    if (touchRead(4) < 40)
-    {
-      bleKeyboard.print("A");
+    int value = touchRead(touchPins[i]);
+
+    // If touched (value below threshold) and not already triggered
+    if (value < thresholds[i] && !touched[i]) {
+
+      Serial.println("Touch detected on pin " + String(touchPins[i]));
+
+      // Send key via Bluetooth
+      bleKeyboard.print(String(keysToSend[i]));
+
+      // Mark as handled
+      touched[i] = true;
+    }
+
+    // Reset state when released
+    if (value >= thresholds[i]) {
+      touched[i] = false;
     }
   }
 
-  delay(200);
+  delay(50);
 }
