@@ -44,66 +44,36 @@
 */
 
 
-
- #include <Arduino.h>
+#include <Arduino.h>
 #include <BleKeyboard.h>
 
-#define NUM_TOUCH 4
 
-// Touch pins on the ESP32
-int touchPins[NUM_TOUCH] = {12, 14, 27, 13};
-
-// Thresholds: lower value = more sensitive
-int thresholds[NUM_TOUCH] = {40, 40, 40, 40};
-
-// Keys that will be sent via Bluetooth
-char keysToSend[NUM_TOUCH] = {'a', 'b', 'c', 'd'};
-
-// State to avoid repeated triggering
-bool touched[NUM_TOUCH] = {false};
-
-// Create Bluetooth keyboard instance
-BleKeyboard bleKeyboard("ESP32 Keyboard");
+BleKeyboard bleKeyboard("MrX", "Gabriel Rausch", 100);
 
 void setup() {
   Serial.begin(115200);
-
-  // Start Bluetooth keyboard
+  pinMode(4, INPUT_PULLUP);
   bleKeyboard.begin();
-
   Serial.println("Waiting for Bluetooth connection...");
 }
 
 void loop() {
 
-  // Only send keys if a device is connected
-  if (!bleKeyboard.isConnected()) {
-    delay(100);
-    return;
-  }
+   // Via touch
+   // e.g.
+   // touchRead(4)
+   // if (touchRead(4) < 30) { ... }
 
-  // Check all touch pins
-  for (int i = 0; i < NUM_TOUCH; i++) {
-
-    int value = touchRead(touchPins[i]);
-
-    // If touched (value below threshold) and not already triggered
-    if (value < thresholds[i] && !touched[i]) {
-
-      Serial.println("Touch detected on pin " + String(touchPins[i]));
-
-      // Send key via Bluetooth
-      bleKeyboard.print(String(keysToSend[i]));
-
-      // Mark as handled
-      touched[i] = true;
-    }
-
-    // Reset state when released
-    if (value >= thresholds[i]) {
-      touched[i] = false;
+  
+  if (bleKeyboard.isConnected()) {
+    if (digitalRead(4) == 0) {
+      Serial.println("Sensor activated on pin!");
+      bleKeyboard.press(KEY_LEFT_GUI);
+      bleKeyboard.press(KEY_LEFT_SHIFT);
+      bleKeyboard.press('d');
+      delay(100);
+      bleKeyboard.releaseAll();
     }
   }
-
-  delay(50);
+  delay(100);
 }
