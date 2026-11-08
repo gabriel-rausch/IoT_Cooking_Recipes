@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Hello World – Blink</title>
+  <desc id="description">Illustration of an ESP32 development board connected to a blinking LED and a touch wire.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102c3c"/>
+      <stop offset="1" stop-color="#1b5260"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#30b89b"/>
+      <stop offset="1" stop-color="#168271"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#ff745e" stop-opacity=".58"/>
+      <stop offset="1" stop-color="#ff745e" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/>
+    </pattern>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#071923" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" rx="34" fill="url(#background)"/>
+  <rect width="1200" height="630" rx="34" fill="url(#grid)"/>
+  <circle cx="935" cy="313" r="280" fill="#62d8bd" opacity=".08"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="76" y="82" width="184" height="38" rx="19" fill="#d5f3e8" opacity=".13"/>
+    <circle cx="99" cy="101" r="6" fill="#79e0bd"/>
+    <text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 01</text>
+
+    <text x="76" y="226" fill="#f3f7ed" font-size="72" font-weight="800" letter-spacing="-2">HELLO</text>
+    <text x="76" y="304" fill="#f3f7ed" font-size="72" font-weight="800" letter-spacing="-2">WORLD</text>
+    <text x="76" y="388" fill="#ffb28e" font-size="76" font-weight="800" letter-spacing="1">BLINK<span fill="#f3f7ed">.</span></text>
+    <text x="80" y="445" fill="#d3e6df" font-size="23">Code. Touch. Light.</text>
+    <path d="M80 490h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/>
+    <text x="80" y="535" fill="#a9c8c0" font-size="17" letter-spacing="1">A FIRST STEP IN PHYSICAL COMPUTING</text>
+  </g>
+
+  <g filter="url(#shadow)" transform="rotate(-7 825 322)">
+    <rect x="548" y="140" width="520" height="356" rx="30" fill="url(#board)" stroke="#77e0c3" stroke-width="3"/>
+    <path d="M574 162h118v-22h-90a28 28 0 0 0-28 22zm418 334h48a28 28 0 0 0 28-28v-50h-76z" fill="#127364" opacity=".65"/>
+
+    <rect x="757" y="154" width="126" height="56" rx="7" fill="#d5e0d9"/>
+    <rect x="772" y="164" width="96" height="36" rx="4" fill="#697e7b"/>
+    <path d="M788 164v36m16-36v36m16-36v36m16-36v36m16-36v36m-80-18h96" stroke="#bac8c0" stroke-width="2"/>
+
+    <rect x="700" y="259" width="235" height="166" rx="12" fill="#183641" stroke="#8ce2c9" stroke-width="3"/>
+    <rect x="723" y="280" width="189" height="124" rx="5" fill="#243f49"/>
+    <path d="M745 296h38v14h-38zm60 0h83v14h-83zm-60 31h58v12h-58zm77 0h66v12h-66zm-77 31h45v12h-45zm64 0h79v12h-79zm-64 31h72v8h-72z" fill="#70cbb0" opacity=".78"/>
+    <text x="817" y="388" text-anchor="middle" fill="#e1f4eb" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">ESP32</text>
+
+    <rect x="950" y="268" width="64" height="144" rx="12" fill="#d1a96c"/>
+    <path d="M961 282h42m-42 17h42m-42 17h42m-42 17h42m-42 17h42m-42 17h42m-42 17h42" stroke="#785c3c" stroke-width="5" stroke-linecap="round"/>
+
+    <g fill="#e1c98d" stroke="#167768" stroke-width="2">
+      <circle cx="581" cy="228" r="7"/><circle cx="581" cy="261" r="7"/><circle cx="581" cy="294" r="7"/>
+      <circle cx="581" cy="327" r="7"/><circle cx="581" cy="360" r="7"/><circle cx="581" cy="393" r="7"/>
+      <circle cx="581" cy="426" r="7"/><circle cx="581" cy="459" r="7"/>
+      <circle cx="1035" cy="228" r="7"/><circle cx="1035" cy="261" r="7"/><circle cx="1035" cy="294" r="7"/>
+      <circle cx="1035" cy="327" r="7"/><circle cx="1035" cy="360" r="7"/><circle cx="1035" cy="393" r="7"/>
+      <circle cx="1035" cy="426" r="7"/><circle cx="1035" cy="459" r="7"/>
+    </g>
+
+    <rect x="521" y="257" width="54" height="123" rx="13" fill="#c7d5ce"/>
+    <rect x="533" y="276" width="28" height="85" rx="7" fill="#526a6b"/>
+    <path d="M542 282v73" stroke="#9eafaa" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="1003" cy="188" r="67" fill="url(#glow)"/>
+    <path d="M1003 209v30m-15-6h30" stroke="#e9dac3" stroke-width="5" stroke-linecap="round"/>
+    <path d="M988 188c0-9 7-16 15-16s15 7 15 16c0 6-4 10-8 14-2 2-3 4-3 7h-8c0-3-1-5-3-7-4-4-8-8-8-14z" fill="#ff705d" stroke="#ffe0bd" stroke-width="3"/>
+    <path d="M1003 153v-12m-32 19-9-9m73 9 9-9" stroke="#ffb184" stroke-width="4" stroke-linecap="round"/>
+
+    <circle cx="640" cy="456" r="12" fill="#f5f0d7" stroke="#bb9d61" stroke-width="4"/>
+    <circle cx="683" cy="456" r="12" fill="#f5f0d7" stroke="#bb9d61" stroke-width="4"/>
+    <text x="640" y="486" text-anchor="middle" fill="#e5f4ed" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">GND</text>
+    <text x="683" y="486" text-anchor="middle" fill="#e5f4ed" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700">3V3</text>
+  </g>
+
+  <path d="M1013 188c56 5 80 38 83 82" fill="none" stroke="#ffb184" stroke-width="3" stroke-dasharray="7 10" opacity=".8"/>
+  <circle cx="1096" cy="278" r="5" fill="#ffb184"/>
+</svg>

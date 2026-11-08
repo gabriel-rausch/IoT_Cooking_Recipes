@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Addressable RGB LED Strip</title>
+  <desc id="description">Illustration of a colorful addressable LED strip connected to an ESP32 data pin.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c3c"/><stop offset="1" stop-color="#1b5260"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/></pattern>
+    <radialGradient id="colorGlow"><stop stop-color="#bb69ff" stop-opacity=".38"/><stop offset="1" stop-color="#bb69ff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#bg)"/><rect width="1200" height="630" rx="34" fill="url(#grid)"/><circle cx="925" cy="315" r="270" fill="#62d8bd" opacity=".08"/>
+  <g font-family="Arial, Helvetica, sans-serif"><rect x="76" y="82" width="208" height="38" rx="19" fill="#d5f3e8" opacity=".13"/><circle cx="99" cy="101" r="6" fill="#79e0bd"/><text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 09</text><text x="76" y="227" fill="#f3f7ed" font-size="59" font-weight="800">PIXEL BY</text><text x="76" y="301" fill="#ffb28e" font-size="59" font-weight="800">PIXEL.</text><text x="80" y="371" fill="#d3e6df" font-size="22">Send color down one data line.</text><path d="M80 430h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/><text x="80" y="475" fill="#a9c8c0" font-size="16" letter-spacing="1">WS2812 • DIGITAL OUTPUT</text></g>
+  <g transform="translate(620 135)">
+    <circle cx="282" cy="183" r="210" fill="url(#colorGlow)"/>
+    <rect x="15" y="70" width="480" height="216" rx="30" fill="#168271" stroke="#77e0c3" stroke-width="4"/>
+    <path d="M34 177h442" stroke="#ffd28a" stroke-width="5" opacity=".8"/>
+    <g>
+      <rect x="53" y="116" width="73" height="105" rx="12" fill="#263f49" stroke="#d7e6dc" stroke-width="3"/><rect x="149" y="116" width="73" height="105" rx="12" fill="#263f49" stroke="#d7e6dc" stroke-width="3"/><rect x="245" y="116" width="73" height="105" rx="12" fill="#263f49" stroke="#d7e6dc" stroke-width="3"/><rect x="341" y="116" width="73" height="105" rx="12" fill="#263f49" stroke="#d7e6dc" stroke-width="3"/>
+      <circle cx="89" cy="168" r="25" fill="#ff6c5e"/><circle cx="185" cy="168" r="25" fill="#ffcf6e"/><circle cx="281" cy="168" r="25" fill="#58d9bb"/><circle cx="377" cy="168" r="25" fill="#7e8dff"/>
+      <text x="89" y="250" text-anchor="middle" fill="#e1f4eb" font-family="monospace" font-size="14">0</text><text x="185" y="250" text-anchor="middle" fill="#e1f4eb" font-family="monospace" font-size="14">1</text><text x="281" y="250" text-anchor="middle" fill="#e1f4eb" font-family="monospace" font-size="14">2</text><text x="377" y="250" text-anchor="middle" fill="#e1f4eb" font-family="monospace" font-size="14">3</text>
+    </g>
+    <rect x="42" y="319" width="176" height="83" rx="15" fill="#173540" stroke="#9de4cb" stroke-width="3"/>
+    <rect x="64" y="338" width="130" height="45" rx="7" fill="#263f49"/><text x="129" y="367" text-anchor="middle" fill="#9de4cb" font-family="monospace" font-size="17">ESP32 GPIO</text>
+    <path d="M218 360h44v-74" fill="none" stroke="#ffd28a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="297" y="359" fill="#e1f4eb" font-family="Arial" font-size="17" font-weight="700">DIN  →  DOUT</text>
+    <path d="M290 382h154" stroke="#77ddbd" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

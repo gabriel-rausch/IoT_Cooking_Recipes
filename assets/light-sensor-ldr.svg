@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Light Sensor LDR</title>
+  <desc id="description">Illustration of light rays falling on an LDR connected to an ESP32 analog input.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c3c"/><stop offset="1" stop-color="#1b5260"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/></pattern>
+    <radialGradient id="sun"><stop stop-color="#ffd986" stop-opacity=".55"/><stop offset="1" stop-color="#ffd986" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#bg)"/><rect width="1200" height="630" rx="34" fill="url(#grid)"/><circle cx="925" cy="315" r="270" fill="#62d8bd" opacity=".08"/>
+  <g font-family="Arial, Helvetica, sans-serif"><rect x="76" y="82" width="208" height="38" rx="19" fill="#d5f3e8" opacity=".13"/><circle cx="99" cy="101" r="6" fill="#79e0bd"/><text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 05</text><text x="76" y="235" fill="#f3f7ed" font-size="65" font-weight="800">READ THE</text><text x="76" y="313" fill="#ffb28e" font-size="65" font-weight="800">LIGHT.</text><text x="80" y="382" fill="#d3e6df" font-size="22">A resistor that senses brightness.</text><path d="M80 440h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/><text x="80" y="485" fill="#a9c8c0" font-size="16" letter-spacing="1">LDR • ANALOG INPUT</text></g>
+  <g transform="translate(645 125)">
+    <circle cx="362" cy="102" r="100" fill="url(#sun)"/><circle cx="362" cy="102" r="48" fill="#ffd986" stroke="#fff0c8" stroke-width="5"/>
+    <path d="M362 28V5m-52 48-18-18m122 18 18-18m-70 113v23m-74-74h-24m172 0h-24" stroke="#ffd986" stroke-width="7" stroke-linecap="round"/>
+    <path d="M335 159l-50 74m77-72-45 82m77-82-44 78" stroke="#ffd986" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+    <rect x="30" y="89" width="170" height="244" rx="24" fill="#168271" stroke="#77e0c3" stroke-width="4"/>
+    <circle cx="115" cy="198" r="61" fill="#d9caa4" stroke="#fff0ca" stroke-width="5"/>
+    <path d="M82 165q-17 33 0 66m18-80q-21 48 0 97m18-99q-21 48 0 97m18-81q-17 33 0 66" fill="none" stroke="#8c7c61" stroke-width="5"/>
+    <path d="M200 175h66v114h-66m266-173H272v116h-6" fill="none" stroke="#ffd28a" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="317" y="214" width="154" height="112" rx="16" fill="#173540" stroke="#9de4cb" stroke-width="3"/>
+    <path d="M343 293l23-35 22 15 24-48 30 68" fill="none" stroke="#ffb28e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="115" y="368" text-anchor="middle" fill="#e1f4eb" font-family="Arial" font-size="16" font-weight="700">LDR VOLTAGE</text>
+    <text x="394" y="352" text-anchor="middle" fill="#a9c8c0" font-family="monospace" font-size="16">ADC VALUE</text>
+  </g>
+</svg>

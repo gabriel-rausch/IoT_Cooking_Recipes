@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Temperature, Humidity and Pressure with BME280</title>
+  <desc id="description">Illustration of a BME280 sensor measuring temperature, humidity, and air pressure over I2C.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c3c"/><stop offset="1" stop-color="#1b5260"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#bg)"/><rect width="1200" height="630" rx="34" fill="url(#grid)"/><circle cx="925" cy="315" r="270" fill="#62d8bd" opacity=".08"/>
+  <g font-family="Arial, Helvetica, sans-serif"><rect x="76" y="82" width="208" height="38" rx="19" fill="#d5f3e8" opacity=".13"/><circle cx="99" cy="101" r="6" fill="#79e0bd"/><text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 07</text><text x="76" y="226" fill="#f3f7ed" font-size="62" font-weight="800">FEEL THE</text><text x="76" y="301" fill="#ffb28e" font-size="62" font-weight="800">WEATHER.</text><text x="80" y="370" fill="#d3e6df" font-size="22">Temperature • Humidity • Pressure</text><path d="M80 430h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/><text x="80" y="475" fill="#a9c8c0" font-size="16" letter-spacing="1">BME280 • I²C</text></g>
+  <g transform="translate(625 125)">
+    <rect x="132" y="62" width="240" height="246" rx="28" fill="#168271" stroke="#77e0c3" stroke-width="4"/>
+    <rect x="177" y="105" width="150" height="150" rx="18" fill="#183641" stroke="#a1e4ce" stroke-width="3"/>
+    <path d="M199 125h105v110H199z" fill="#263f49"/><text x="251" y="171" text-anchor="middle" fill="#f3f7ed" font-family="monospace" font-size="26" font-weight="700">BME</text><text x="251" y="202" text-anchor="middle" fill="#9de4cb" font-family="monospace" font-size="22">280</text>
+    <path d="M132 108h-34m34 40h-34m34 40h-34m34 40h-34m274-160h34m-34 40h34m-34 40h34m-34 40h34m-34 40h34" stroke="#ffd28a" stroke-width="5" stroke-linecap="round"/>
+    <g font-family="Arial, Helvetica, sans-serif">
+      <circle cx="74" cy="83" r="39" fill="#f5a27f"/><path d="M74 59v37m-13-5a13 13 0 1 0 26 0" fill="none" stroke="#fff0d4" stroke-width="5" stroke-linecap="round"/><text x="74" y="141" text-anchor="middle" fill="#e1f4eb" font-size="15">TEMP</text>
+      <circle cx="433" cy="83" r="39" fill="#4daecc"/><path d="M433 57c-10 15-17 24-17 34a17 17 0 0 0 34 0c0-10-7-19-17-34z" fill="#d9f4f2"/><text x="433" y="141" text-anchor="middle" fill="#e1f4eb" font-size="15">HUMIDITY</text>
+      <circle cx="74" cy="297" r="39" fill="#d5b37a"/><path d="M56 306a19 19 0 1 1 36 0m-18-12v20" fill="none" stroke="#fff0ca" stroke-width="5" stroke-linecap="round"/><text x="74" y="355" text-anchor="middle" fill="#e1f4eb" font-size="15">PRESSURE</text>
+    </g>
+    <path d="M112 83h20m240 0h22M112 297h20m240 0h22" stroke="#ffd28a" stroke-width="4" stroke-dasharray="5 6"/>
+    <path d="M207 350h94m-84 16h74" stroke="#77ddbd" stroke-width="4" stroke-linecap="round"/>
+    <text x="254" y="401" text-anchor="middle" fill="#a9c8c0" font-family="monospace" font-size="16">SDA  •  SCL</text>
+  </g>
+</svg>

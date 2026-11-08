@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Sound Level with Microphone</title>
+  <desc id="description">Illustration of a microphone module capturing sound levels and showing an analog waveform.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c3c"/><stop offset="1" stop-color="#1b5260"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#bg)"/><rect width="1200" height="630" rx="34" fill="url(#grid)"/><circle cx="925" cy="315" r="270" fill="#62d8bd" opacity=".08"/>
+  <g font-family="Arial, Helvetica, sans-serif"><rect x="76" y="82" width="208" height="38" rx="19" fill="#d5f3e8" opacity=".13"/><circle cx="99" cy="101" r="6" fill="#79e0bd"/><text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 08</text><text x="76" y="228" fill="#f3f7ed" font-size="62" font-weight="800">CAN YOU</text><text x="76" y="303" fill="#ffb28e" font-size="62" font-weight="800">HEAR IT?</text><text x="80" y="373" fill="#d3e6df" font-size="22">Watch sound become a signal.</text><path d="M80 432h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/><text x="80" y="477" fill="#a9c8c0" font-size="16" letter-spacing="1">MICROPHONE • ANALOG INPUT</text></g>
+  <g transform="translate(620 130)">
+    <rect x="18" y="38" width="222" height="264" rx="24" fill="#168271" stroke="#77e0c3" stroke-width="4"/>
+    <circle cx="129" cy="158" r="72" fill="#263f49" stroke="#c3d9ce" stroke-width="7"/>
+    <circle cx="129" cy="158" r="51" fill="#91a9a0" stroke="#e4eee5" stroke-width="4"/>
+    <circle cx="129" cy="158" r="38" fill="#364b53"/>
+    <path d="M129 130v56m-19-37 38 18m0-18-38 18" stroke="#b7c9c0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="65" cy="76" r="7" fill="#ffd28a"/><circle cx="194" cy="76" r="7" fill="#ffd28a"/>
+    <path d="M240 169h50" stroke="#ffd28a" stroke-width="5"/>
+    <rect x="286" y="56" width="179" height="214" rx="18" fill="#173540" stroke="#9de4cb" stroke-width="3"/>
+    <path d="M306 164h14l10-25 13 47 15-81 17 120 18-91 15 49 14-35 12 16h17" fill="none" stroke="#ffb28e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M306 222h139" stroke="#80cbb2" stroke-width="2" stroke-dasharray="5 7"/>
+    <text x="375" y="93" text-anchor="middle" fill="#a9c8c0" font-family="monospace" font-size="14">ANALOG SIGNAL</text>
+    <text x="129" y="343" text-anchor="middle" fill="#e1f4eb" font-family="Arial" font-size="16" font-weight="700">AO  →  ESP32 ADC</text>
+    <path d="M74 370h110" stroke="#77ddbd" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>

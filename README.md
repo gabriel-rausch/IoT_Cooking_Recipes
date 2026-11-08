@@ -23,7 +23,7 @@ Each folder contains self-contained sketches and explanations to help you learn,
    ```bash
    git clone https://github.com/gabriel-rausch/IoT_Cooking_Recipes.git
    cd IoT_Cooking_Recipes
-    ```
+   ```
 
 2. Open a folder in Arduino IDE or PlatformIO.
 3. Install required libraries (see sketch comments).
@@ -42,5 +42,34 @@ Feel free to:
 
 ---
 
+## Stationsarbeiten für Creative Coding II
+
+<table>
+  <tr>
+    <td width="50%"><a href="./01_Getting_Started/Hello_World_Blink/"><img src="./assets/hello-world-blink.svg" alt="Hello World – Blink: ESP32 mit blinkender LED" width="100%"></a></td>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Button_LED/"><img src="./assets/button-led.svg" alt="Button und LED: Taster schaltet eine LED" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Potentiometer_Serial/"><img src="./assets/potentiometer-serial.svg" alt="Potentiometer und Serial Monitor: analoge Messwerte" width="100%"></a></td>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Ultraschall_Sensor_Serial/"><img src="./assets/ultrasonic-distance.svg" alt="Ultraschallsensor und Serial Monitor: Abstandsmessung" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Light_Sensor_LDR/"><img src="./assets/light-sensor-ldr.svg" alt="Helligkeit mit einem LDR messen" width="100%"></a></td>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Motion_Sensor_PIR/"><img src="./assets/motion-sensor-pir.svg" alt="Bewegung mit einem PIR-Sensor erkennen" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Temperature_Humidity_Pressure_BME280/"><img src="./assets/bme280-environment.svg" alt="Temperatur, Luftfeuchtigkeit und Luftdruck mit dem BME280" width="100%"></a></td>
+    <td width="50%"><a href="./02_Basics_of_Electronics/Sound_Level_Microphone/"><img src="./assets/microphone-sound-level.svg" alt="Geräuschpegel mit einem Mikrofonmodul beobachten" width="100%"></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="./03_Transducers/Led-strip/"><img src="./assets/addressable-rgb-led-strip.svg" alt="Adressierbarer RGB-LED-Streifen" width="100%"></a></td>
+    <td width="50%"></td>
+  </tr>
+</table>
+
+
+---
+
 Happy hacking & enjoy your IoT cooking! 🧪🔧
 
+## 

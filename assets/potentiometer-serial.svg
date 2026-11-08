@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Potentiometer and Serial Monitor</title>
+  <desc id="description">Illustration of a potentiometer connected to an ESP32 with changing analog values shown on a monitor.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c3c"/><stop offset="1" stop-color="#1b5260"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#bg)"/><rect width="1200" height="630" rx="34" fill="url(#grid)"/><circle cx="925" cy="315" r="270" fill="#62d8bd" opacity=".08"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <rect x="76" y="82" width="208" height="38" rx="19" fill="#d5f3e8" opacity=".13"/><circle cx="99" cy="101" r="6" fill="#79e0bd"/><text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 03</text>
+    <text x="76" y="223" fill="#f3f7ed" font-size="61" font-weight="800">TURN THE</text><text x="76" y="297" fill="#ffb28e" font-size="61" font-weight="800">DIAL.</text>
+    <text x="80" y="366" fill="#d3e6df" font-size="22">See analog values change.</text><path d="M80 425h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/><text x="80" y="470" fill="#a9c8c0" font-size="16" letter-spacing="1">ANALOG INPUT • SERIAL</text>
+  </g>
+  <g transform="translate(632 133)">
+    <rect x="15" y="18" width="470" height="348" rx="22" fill="#168271" stroke="#77e0c3" stroke-width="3"/>
+    <rect x="45" y="48" width="410" height="152" rx="14" fill="#173540" stroke="#9de4cb" stroke-width="3"/>
+    <path d="M66 158h42l18-46 25 31 22-64 25 66 24-23 20 32 22-51 26 39h28l18-34 24 48h30" fill="none" stroke="#ffb28e" stroke-width="5" stroke-linejoin="round"/>
+    <g fill="#e5f4ed" font-family="monospace" font-size="16"><text x="61" y="82">ADC: 1280</text><text x="250" y="82">ADC: 2045</text><text x="61" y="185">ADC: 3098</text></g>
+    <path d="M245 200v42M160 242h170" stroke="#ffd28a" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="245" cy="286" r="73" fill="#d5b37a" stroke="#ffe1aa" stroke-width="5"/>
+    <circle cx="245" cy="286" r="51" fill="#4a6670" stroke="#213e48" stroke-width="5"/>
+    <path d="M245 286l28-38" stroke="#fff0ca" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="245" cy="286" r="10" fill="#f3f7ed"/>
+    <text x="128" y="345" fill="#e1f4eb" font-family="Arial" font-size="17" font-weight="700">POTENTIOMETER → ADC</text>
+  </g>
+</svg>

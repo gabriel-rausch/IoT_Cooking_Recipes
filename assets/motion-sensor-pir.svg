@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Motion Sensor PIR</title>
+  <desc id="description">Illustration of a PIR motion sensor detecting a person and sending a digital signal to an ESP32.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c3c"/><stop offset="1" stop-color="#1b5260"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="#d9f3e7" opacity=".12"/></pattern>
+  </defs>
+  <rect width="1200" height="630" rx="34" fill="url(#bg)"/><rect width="1200" height="630" rx="34" fill="url(#grid)"/><circle cx="925" cy="315" r="270" fill="#62d8bd" opacity=".08"/>
+  <g font-family="Arial, Helvetica, sans-serif"><rect x="76" y="82" width="208" height="38" rx="19" fill="#d5f3e8" opacity=".13"/><circle cx="99" cy="101" r="6" fill="#79e0bd"/><text x="116" y="107" fill="#bdebdc" font-size="16" font-weight="700" letter-spacing="2">ESP32 • STATION 06</text><text x="76" y="230" fill="#f3f7ed" font-size="65" font-weight="800">MOTION</text><text x="76" y="308" fill="#ffb28e" font-size="65" font-weight="800">DETECTED.</text><text x="80" y="378" fill="#d3e6df" font-size="22">Notice movement with infrared.</text><path d="M80 435h76" stroke="#77ddbd" stroke-width="5" stroke-linecap="round"/><text x="80" y="480" fill="#a9c8c0" font-size="16" letter-spacing="1">PIR • DIGITAL INPUT</text></g>
+  <g transform="translate(625 133)">
+    <path d="M265 130q-85-89-170 0m226 35q-111-126-222 0m275 35q-137-160-274 0" fill="none" stroke="#75dfc1" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+    <rect x="22" y="190" width="238" height="140" rx="22" fill="#168271" stroke="#77e0c3" stroke-width="4"/>
+    <path d="M66 186a75 75 0 0 1 150 0" fill="#e4ede0" stroke="#fff" stroke-width="5"/>
+    <path d="M78 187a63 63 0 0 1 126 0" fill="#d6e0d1"/>
+    <circle cx="141" cy="261" r="17" fill="#f4d18a"/><circle cx="201" cy="261" r="17" fill="#f4d18a"/>
+    <path d="M141 330v26h-42m102-26v26h42" fill="none" stroke="#ffd28a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M383 159v31m-24 0a24 24 0 1 1 48 0v88a40 40 0 1 1-48 0v-44" fill="#ffb28e" stroke="#ffe0bd" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="383" cy="275" r="19" fill="#ff705d"/><path d="M383 190v78" stroke="#ff705d" stroke-width="7" stroke-linecap="round"/>
+    <rect x="314" y="300" width="142" height="66" rx="14" fill="#173540" stroke="#9de4cb" stroke-width="3"/><text x="385" y="326" text-anchor="middle" fill="#a9c8c0" font-family="monospace" font-size="13">GPIO 27</text><text x="385" y="351" text-anchor="middle" fill="#f3f7ed" font-family="monospace" font-size="19">HIGH</text>
+    <path d="M261 260h51" stroke="#ffd28a" stroke-width="5" stroke-dasharray="8 8"/>
+    <text x="140" y="397" text-anchor="middle" fill="#e1f4eb" font-family="Arial" font-size="16" font-weight="700">PASSIVE INFRARED SENSOR</text>
+  </g>
+</svg>
